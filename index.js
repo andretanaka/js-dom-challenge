@@ -32,3 +32,16 @@ const data = [
         description: 'Desenho'
     }
 ]
+
+
+let generos = data.map((genero) => `<p>ID: ${genero.id}</p><p>Descrição: ${genero.description}</p>`)
+
+let divGenero = document.getElementById('generos')
+generos.forEach(elemento => {
+    divGenero.innerHTML = divGenero.innerHTML + elemento 
+});
+//divGenero.innerHTML = generos
+
+console.log(divGenero)
+console.log(generos)
+console.log("teste")
